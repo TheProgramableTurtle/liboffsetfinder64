@@ -15,6 +15,7 @@ autoconf
 autoheader
 automake --add-missing
 autoreconf -i
+echo $@
 if [ $# > 1 && $1 == "--no-mach-o"];
 then
 	./configure "$0"
