@@ -5,9 +5,11 @@ lib_LTLIBRARIES = liboffsetfinder64.la
 
 liboffsetfinder64_la_CPPFLAGS = $(AM_CFLAGS)
 liboffsetfinder64_la_LIBADD = $(AM_LDFLAGS)
-liboffsetfinder64_la_SOURCES = 	patch.cpp \
+liboffsetfinder64_la_SOURCES = 	insn.cpp \
+																vsegment.cpp \
+																vmem.cpp \
+																patch.cpp \
 																patchfinder64.cpp \
 																machopatchfinder64.cpp \
-																ibootpatchfinder64.cpp \
 																kernelpatchfinder64.cpp \
-																kernelpatchfinder64iOS13.cpp
+																ibootpatchfinder64.cpp
