@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# > 1 && $1 == "--no-mach-o"];
+if [ $# > 1 ] && [ $1 == "--no-mach-o" ];
 then
 	echo "building without machopatchfinder, kernelpatchfinder"
 	cp ./makefiles/include-no-mach-o.make ./include/Makefile.am
