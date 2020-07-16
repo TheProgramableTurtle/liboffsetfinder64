@@ -18,4 +18,12 @@ autoconf
 autoheader
 automake --add-missing
 autoreconf -i
-./configure "$@"
+if [ $# > 1 ];
+then 
+	if [ $1 == "--no-mach-o" ];
+	then 
+		./configure "$0"
+	fi
+else
+	./configure "$@"
+fi
