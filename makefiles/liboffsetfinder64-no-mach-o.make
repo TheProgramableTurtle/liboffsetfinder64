@@ -7,4 +7,4 @@ liboffsetfinder64_la_CPPFLAGS = $(AM_CFLAGS)
 liboffsetfinder64_la_LIBADD = $(AM_LDFLAGS)
 liboffsetfinder64_la_SOURCES = 	patch.cpp \
 																patchfinder64.cpp \
-																ibootpatchfinder64.cpp \
+																ibootpatchfinder64.cpp 
