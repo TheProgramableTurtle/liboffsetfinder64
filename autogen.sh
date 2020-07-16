@@ -5,11 +5,11 @@ then
 	if [ $1 == "--no-mach-o" ];
 	then
 		echo "building without machopatchfinder, kernelpatchfinder"
-		mv ./makefiles/include-no-mach-o.make ./include/Makefile.am
-		mv ./makefiles/liboffsetfinder64-no-mach-o.make ./liboffsetfinder64/Makefile.am
+		cp ./makefiles/include-no-mach-o.make ./include/Makefile.am
+		cp ./makefiles/liboffsetfinder64-no-mach-o.make ./liboffsetfinder64/Makefile.am
 	else 
-		mv ./makefiles/include.make ./include/Makefile.am
-		mv ./makefiles/liboffsetfinder64.make ./liboffsetfinder64/Makefile.am
+		cp ./makefiles/include.make ./include/Makefile.am
+		cp ./makefiles/liboffsetfinder64.make ./liboffsetfinder64/Makefile.am
 	fi
 fi
 
@@ -25,5 +25,5 @@ then
 		./configure "$0"
 	fi
 else
-	./configure "$@"
+	./configure
 fi
